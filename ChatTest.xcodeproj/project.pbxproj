@@ -6,6 +6,15 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		ED4A794B2DCBF92A005B8EE5 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = ED4A794A2DCBF92A005B8EE5 /* FirebaseAnalytics */; };
+		ED4A794D2DCBF92A005B8EE5 /* FirebaseAnalyticsOnDeviceConversion in Frameworks */ = {isa = PBXBuildFile; productRef = ED4A794C2DCBF92A005B8EE5 /* FirebaseAnalyticsOnDeviceConversion */; };
+		ED4A794F2DCBF92A005B8EE5 /* FirebaseAnalyticsWithoutAdIdSupport in Frameworks */ = {isa = PBXBuildFile; productRef = ED4A794E2DCBF92A005B8EE5 /* FirebaseAnalyticsWithoutAdIdSupport */; };
+		ED4A79512DCBF92A005B8EE5 /* FirebaseAppCheck in Frameworks */ = {isa = PBXBuildFile; productRef = ED4A79502DCBF92A005B8EE5 /* FirebaseAppCheck */; };
+		ED4A79532DCBF92A005B8EE5 /* FirebaseAppDistribution-Beta in Frameworks */ = {isa = PBXBuildFile; productRef = ED4A79522DCBF92A005B8EE5 /* FirebaseAppDistribution-Beta */; };
+		ED4A797E2DCC09F2005B8EE5 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = ED4A797D2DCC09F2005B8EE5 /* FirebaseFirestore */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		ED4A792E2DCBF551005B8EE5 /* ChatTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChatTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -23,6 +32,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ED4A79512DCBF92A005B8EE5 /* FirebaseAppCheck in Frameworks */,
+				ED4A794B2DCBF92A005B8EE5 /* FirebaseAnalytics in Frameworks */,
+				ED4A79532DCBF92A005B8EE5 /* FirebaseAppDistribution-Beta in Frameworks */,
+				ED4A794F2DCBF92A005B8EE5 /* FirebaseAnalyticsWithoutAdIdSupport in Frameworks */,
+				ED4A794D2DCBF92A005B8EE5 /* FirebaseAnalyticsOnDeviceConversion in Frameworks */,
+				ED4A797E2DCC09F2005B8EE5 /* FirebaseFirestore in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -33,6 +48,7 @@
 			isa = PBXGroup;
 			children = (
 				ED4A79302DCBF551005B8EE5 /* ChatTest */,
+				ED4A797C2DCC09F2005B8EE5 /* Frameworks */,
 				ED4A792F2DCBF551005B8EE5 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -43,6 +59,13 @@
 				ED4A792E2DCBF551005B8EE5 /* ChatTest.app */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		ED4A797C2DCC09F2005B8EE5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -65,6 +88,12 @@
 			);
 			name = ChatTest;
 			packageProductDependencies = (
+				ED4A794A2DCBF92A005B8EE5 /* FirebaseAnalytics */,
+				ED4A794C2DCBF92A005B8EE5 /* FirebaseAnalyticsOnDeviceConversion */,
+				ED4A794E2DCBF92A005B8EE5 /* FirebaseAnalyticsWithoutAdIdSupport */,
+				ED4A79502DCBF92A005B8EE5 /* FirebaseAppCheck */,
+				ED4A79522DCBF92A005B8EE5 /* FirebaseAppDistribution-Beta */,
+				ED4A797D2DCC09F2005B8EE5 /* FirebaseFirestore */,
 			);
 			productName = ChatTest;
 			productReference = ED4A792E2DCBF551005B8EE5 /* ChatTest.app */;
@@ -94,6 +123,9 @@
 			);
 			mainGroup = ED4A79252DCBF551005B8EE5;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				ED4A793D2DCBF5A4005B8EE5 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = ED4A792F2DCBF551005B8EE5 /* Products */;
 			projectDirPath = "";
@@ -257,9 +289,9 @@
 				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 18.4;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 15.4;
@@ -294,9 +326,9 @@
 				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 18.4;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 15.4;
@@ -335,6 +367,50 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		ED4A793D2DCBF5A4005B8EE5 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 11.12.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		ED4A794A2DCBF92A005B8EE5 /* FirebaseAnalytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = ED4A793D2DCBF5A4005B8EE5 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalytics;
+		};
+		ED4A794C2DCBF92A005B8EE5 /* FirebaseAnalyticsOnDeviceConversion */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = ED4A793D2DCBF5A4005B8EE5 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalyticsOnDeviceConversion;
+		};
+		ED4A794E2DCBF92A005B8EE5 /* FirebaseAnalyticsWithoutAdIdSupport */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = ED4A793D2DCBF5A4005B8EE5 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalyticsWithoutAdIdSupport;
+		};
+		ED4A79502DCBF92A005B8EE5 /* FirebaseAppCheck */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = ED4A793D2DCBF5A4005B8EE5 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAppCheck;
+		};
+		ED4A79522DCBF92A005B8EE5 /* FirebaseAppDistribution-Beta */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = ED4A793D2DCBF5A4005B8EE5 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = "FirebaseAppDistribution-Beta";
+		};
+		ED4A797D2DCC09F2005B8EE5 /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = ED4A793D2DCBF5A4005B8EE5 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = ED4A79262DCBF551005B8EE5 /* Project object */;
 }
